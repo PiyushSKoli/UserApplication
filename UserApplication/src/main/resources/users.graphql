@@ -1,0 +1,22 @@
+schema{
+query:Query
+}
+
+type Query{
+allUsers: [Users]
+users(userId: String): Users
+}
+
+type Users{
+	id:Int
+	userId:String
+	password:String
+    name:String
+	surname:String 
+    email:String 
+	city:String
+    role:String
+	contactNumber:String
+	pinCode:Int
+	designation:String
+}
